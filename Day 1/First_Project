@@ -1,0 +1,4 @@
+# Project: Request to the user their favorite color and song.
+# concat the words to create a beer name, use \n to separate the result in 2 rows
+# Name of the beer created should be between quoting marks.
+print("The name of your beer \nis '" + input("What\'s your favorite color?") + " " + input("What\'s your favorite song?")+"'")

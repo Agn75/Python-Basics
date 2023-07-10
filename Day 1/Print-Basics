@@ -1,0 +1,32 @@
+# Use of the print command to show strings in the console
+print("Hello World")
+
+# Use of the print command to show strings and quotation marks without breaking the text
+print("Hello World, I am using 'Python'")  # We should use different quotation marks to make the difference
+
+# Use of print command to display numbers, since its not a string, we don't need the quotation marks
+print(75)
+
+# print command can also do calcs
+print(100+50)
+
+# print command with special character \n to split the string in 2 different rows
+print("This is a row\nand this is another row")
+
+# print command with special character \t to add a tab to the text
+print("Check the \t'Tab'")
+
+# print command with special character \' to add an apostrophe
+print("This isn\'t impossible")
+
+# print command to add a \ by adding 2 times \\
+print("I am adding a \\ without breaking the command")
+
+# Use of input command to request information from the user
+input("Type your name:")
+
+# Use of input and Print to display the information requested
+print(input("Type your name:"))
+
+# Being a little more creative
+print("Your name is: " + (input("Type your name:")))

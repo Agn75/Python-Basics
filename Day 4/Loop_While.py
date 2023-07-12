@@ -12,5 +12,3 @@ while num2 > 0 :
         print(num2)
     else:
         continue
-
-

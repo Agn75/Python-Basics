@@ -20,7 +20,7 @@ while intentos < 8:
     elif numero > numero_maquina:
         print("Respuesta incorrecta, ha elegido un número mayor al número secreto")
         continue
-    elif numero == numero_maquina:
+    else numero == numero_maquina:
         print(f"Has ganado! Acertaste el número secreto! Te ha tomado {intentos} intentos!")
         break
 

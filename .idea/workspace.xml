@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8ec90af-db22-486e-ad6e-b447ddb29527" name="Changes" comment="Adding the 4th project">
-      <change afterPath="$PROJECT_DIR$/Algorithms/Bubble Sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithms/Insertion_Sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 5/Ejemplo_Funcion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 5/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day 5/functions_interaction.py" afterDir="false" />
+    <list default="true" id="b8ec90af-db22-486e-ad6e-b447ddb29527" name="Changes" comment="Day 5">
+      <change afterPath="$PROJECT_DIR$/Day 5/Args.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 5/Kwargs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day 5/Some_Problems.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day 4/Project4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 4/Project4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 5/functions_interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 5/functions_interaction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,29 +47,8 @@
       <recent name="$PROJECT_DIR$/Basics" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Insertion_Sort">
-    <configuration name="Bubble Sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python Projects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithms" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithms/Bubble Sort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Ejemplo_Funcion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Some_Problems">
+    <configuration name="Args" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python Projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,7 +60,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 5/Ejemplo_Funcion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 5/Args.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Kwargs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python Projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,7 +102,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 5/functions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 5/Kwargs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Some_Problems" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 5/Some_Problems.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Insertion_Sort" />
-        <item itemvalue="Python.Bubble Sort" />
+        <item itemvalue="Python.Some_Problems" />
+        <item itemvalue="Python.Kwargs" />
+        <item itemvalue="Python.Args" />
         <item itemvalue="Python.functions_interaction" />
-        <item itemvalue="Python.Ejemplo_Funcion" />
-        <item itemvalue="Python.functions" />
+        <item itemvalue="Python.Insertion_Sort" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689139530641</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Day 5">
+      <option name="closed" value="true" />
+      <created>1689267551481</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689267551481</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,6 +267,7 @@
     <MESSAGE value="Name Change" />
     <MESSAGE value="Adding conditions, logic operators, Loops while and for" />
     <MESSAGE value="Adding the 4th project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the 4th project" />
+    <MESSAGE value="Day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 5" />
   </component>
 </project>

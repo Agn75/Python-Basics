@@ -26,6 +26,7 @@ def chequear_intento(lista, intento):
         print("Ganaste!")
     print(f"Te ha tocado {lista[intento - 1]}")
 
+
 # Checking results
 palitos_mezclados = mezclar(palitos)
 seleccion = probar_suerte()
@@ -49,8 +50,33 @@ def evaluar_jugada(dado1, dado2):
     elif suma_dados >= 10:
         return f"La suma de tus dados es {suma_dados}. Parece una jugada ganadora"
 
+
 # Checking results
 resultado_dados = lanzar_dados()
-mensaje = evaluar_jugada(resultado_dados[0],resultado_dados[1])
+mensaje = evaluar_jugada(resultado_dados[0], resultado_dados[1])
 print(mensaje)
 
+from random import *
+
+lista = ["Cara", "Cruz"]
+lista_numeros = [1, 4, 5, 7, 9]
+
+
+def lanzar_moneda():
+    resultado = choice(lista)
+    return resultado
+
+
+def probar_suerte(resultado, lista):
+    if resultado == "Cara":
+        print("La lista ha sido eliminada")
+        return lista.clear()
+    elif resultado == "Cruz":
+        print(f"La lista fue salvada, esta es tu lista = {lista}")
+
+
+x = lanzar_moneda()
+
+y = probar_suerte(x, lista_numeros)
+
+print(y)

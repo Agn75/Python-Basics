@@ -5,24 +5,36 @@ from os import system
 # Inicializacion de la ruta donde se encuentran las carpetas que creamos
 mi_ruta = Path(Path.home(), 'Recetas')
 
-finalizar_programa = False
-
 # Mostrar Menu de inicio
 def inicio():
-    system('clear') # Se utiliza para limpiar la pantalla.
-    print('Bienvenido al administrador de recetas')
-    print(f'La cantidad de recetas que se encuentran en la ruta: {mi_ruta} es de: {contar_recetas(mi_ruta)}')
-    print('*' * 6)
-    print("Estan son las opciones disponibles:")
-    print("""
-    [1] - Leer receta
-    [2] - Crear receta
-    [3] - Crear categoria nueva
-    [4] - Eliminar receta
-    [5] - Salir del programa
-    """)
-    eleccion_usuario = int(input("Elige una opcion: "))
-    return eleccion_usuario
+    while True:
+        try:
+            system('clear')  # Se utiliza para limpiar la pantalla.
+            print('Bienvenido al administrador de recetas')
+            print(f'La cantidad de recetas que se encuentran en la ruta: {mi_ruta} es de: {contar_recetas(mi_ruta)}')
+            print('*' * 6)
+            print("Estan son las opciones disponibles:")
+            print("""
+            [1] - Leer receta
+            [2] - Crear receta
+            [3] - Crear categoria nueva
+            [4] - Eliminar receta
+            [5] - Eliminar Categoria
+            [6] - Salir
+            """)
+            eleccion_usuario = input("Elige una opcion: ")
+
+            # Comprobar si la elección es un número válido
+            if eleccion_usuario.isdigit():
+                eleccion_usuario = int(eleccion_usuario)
+                if 1 <= eleccion_usuario <= 6:
+                    return eleccion_usuario
+                else:
+                    print("Elegiste un valor incorrecto! Por favor, elige una opción válida (1 a 6).")
+            else:
+                print("Elegiste un valor incorrecto! Por favor, ingresa un número.")
+        except ValueError:
+            print("Elegiste un valor incorrecto! Por favor, ingresa un número válido.")
 
 
 # Metodo que nos permite contar cuantos files de tipo txt hay en la ruta que otorgamos usando el metodo glob
@@ -42,6 +54,7 @@ def mostrar_categorias(ruta):
         print(f'[{contador}] - {carpeta_str}')
         lista_categorias.append(carpeta)
         contador += 1
+    return lista_categorias
 
 def elegir_categoria(lista):
     eleccion_correcta = 'x'
@@ -70,7 +83,7 @@ def elegir_receta(lista):
     return lista[int(eleccion_receta) - 1]
 
 def leer_receta(receta):
-    print(Path.read(receta))
+    print(Path.read_text(receta))
 
 def crear_receta(ruta):
     existe = False
@@ -113,40 +126,43 @@ def eliminar_categoria(categoria):
 def volver_inicio():
     eleccion_regresar = 'x'
     while eleccion_regresar.lower() != 'v':
-        eleccion_regresar = input("\nPresione V para volver al menu")
+        eleccion_regresar = input("\nPresione V para volver al menu: ")
 
 def operacion_switch(numero_escogido):
-    match numero_escogido:
-        case 1:
-            mis_categorias = mostrar_categorias(mi_ruta)
-            mi_categoria = elegir_categoria(mis_categorias)
-            mis_recetas = mostrar_recetas(mi_categoria)
-            mi_receta = elegir_receta(mis_recetas)
-            leer_receta(mi_receta)
-            volver_inicio()
-        case 2:
-            mis_categorias = mostrar_categorias(mi_ruta)
-            mi_categoria = elegir_categoria(mis_categorias)
-            crear_receta(mi_categoria)
-            volver_inicio()
-        case 3:
-            crear_categoria(mi_ruta)
-            volver_inicio()
-        case 4:
-            mis_categorias = mostrar_categorias(mi_ruta)
-            mi_categoria = elegir_categoria(mis_categorias)
-            mis_recetas = mostrar_recetas(mi_categoria)
-            mi_receta = elegir_receta(mis_recetas)
-            eliminar_receta(mi_receta)
-            volver_inicio()
-        case 5:
-            mis_categorias = mostrar_categorias(mi_ruta)
-            mi_categoria = elegir_categoria(mis_categorias)
-            elegir_categoria(mi_categoria)
-            volver_inicio()
-        case 6:
-            finalizar_programa = True
-        case _:
-            return False
+    while True:
+        match numero_escogido:
+            case 1:
+                mis_categorias = mostrar_categorias(mi_ruta)
+                mi_categoria = elegir_categoria(mis_categorias)
+                mis_recetas = mostrar_recetas(mi_categoria)
+                mi_receta = elegir_receta(mis_recetas)
+                leer_receta(mi_receta)
+                volver_inicio()
+            case 2:
+                mis_categorias = mostrar_categorias(mi_ruta)
+                mi_categoria = elegir_categoria(mis_categorias)
+                crear_receta(mi_categoria)
+                volver_inicio()
+            case 3:
+                crear_categoria(mi_ruta)
+                volver_inicio()
+            case 4:
+                mis_categorias = mostrar_categorias(mi_ruta)
+                mi_categoria = elegir_categoria(mis_categorias)
+                mis_recetas = mostrar_recetas(mi_categoria)
+                mi_receta = elegir_receta(mis_recetas)
+                eliminar_receta(mi_receta)
+                volver_inicio()
+            case 5:
+                mis_categorias = mostrar_categorias(mi_ruta)
+                mi_categoria = elegir_categoria(mis_categorias)
+                elegir_categoria(mi_categoria)
+                volver_inicio()
+            case 6:
+                return False
+            case _:
+                print("Elegiste un valor incorrecto!")
+                numero_escogido == inicio()
+
 
 operacion_switch(inicio())

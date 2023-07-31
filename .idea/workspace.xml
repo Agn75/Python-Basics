@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8ec90af-db22-486e-ad6e-b447ddb29527" name="Changes" comment="Day 6 - Update - Dirs">
-      <change afterPath="$PROJECT_DIR$/Day 6/Project_6.py" afterDir="false" />
+    <list default="true" id="b8ec90af-db22-486e-ad6e-b447ddb29527" name="Changes" comment="Day 6 - Project update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 6/Project_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 6/Project_6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689971181685</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Day 6 - Project update">
+      <option name="closed" value="true" />
+      <created>1690590891317</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690590891317</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,6 +331,7 @@
     <MESSAGE value="Project 5 completed" />
     <MESSAGE value="Day 6 added" />
     <MESSAGE value="Day 6 - Update - Dirs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 6 - Update - Dirs" />
+    <MESSAGE value="Day 6 - Project update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 6 - Project update" />
   </component>
 </project>
